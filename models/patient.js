@@ -7,6 +7,11 @@ const patientSchema = new mongoose.Schema(
       required: [true, "Name is required"],
       trim: true,
     },
+    hospitalId: {
+      type: String,
+      required: [true, "Hospital is required"],
+      trim: true,
+    },
     phone: {
       type: String,
       trim: true,
